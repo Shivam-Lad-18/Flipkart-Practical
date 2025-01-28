@@ -11,33 +11,44 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
- 
+
 </head>
 
 <body>
 
+    <!-- Navigation Bar Section -->
     <nav class="navbar text-white bg-primary pt-2 pb-1">
         <div class="container-fluid w-100 justify-content-evenly">
             <div class="row row-cols-5 d-flex align-items-center gx-5">
+
+                <!-- Logo Section -->
                 <div class="col-10 col-md-1 d-flex justify-content-center">
                     <a class="navbar-brand text-white" href="#">
-                        
-                        <img src="flipkart_logo-cropped.svg" alt="Logo" height="40px" 
+                        <!-- Flipkart Logo -->
+                        <img src="flipkart_logo-cropped.svg" alt="Logo" height="40px"
                             class="d-inline-block align-text-top logo">
                     </a>
                 </div>
+
+                <!-- Search Bar Section (Visible on Medium screens and above) -->
                 <div class="col-6 d-none d-md-block">
                     <form class="d-flex w-100" role="search">
+                        <!-- Search Input Field -->
                         <input class="form-control text-body-secondary border-0 rounded-0 w-100" type="search"
                             placeholder="Search for product,brands and more" aria-label="Search">
+                        <!-- Search Icon -->
                         <span class="input-group-text bg-white border-0 rounded-0">
-                            <i class="bi bi-search text-primary"></i> <!-- Bootstrap search icon -->
+                            <i class="bi bi-search text-primary"></i>
                         </span>
                     </form>
                 </div>
+
+                <!-- Login Button (Visible on Medium screens and above) -->
                 <div class="col-1 d-none d-md-block">
                     <button type="button" class="btn btn-light text-primary border-0 rounded-0">Login</button>
                 </div>
+
+                <!-- Dropdown Menu for 'More' (Visible on Medium screens and above) -->
                 <div class="col-2 d-none d-md-flex justify-content-end">
                     <div class="btn-group">
                         <button type="button" class="btn w-100 btn-primary dropdown-toggle custom-hover-btn"
@@ -52,17 +63,22 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- Cart Button (Visible on Medium screens and above) -->
                 <div class="col-2 overflow-hidden d-none d-md-block">
                     <button type="button" class="btn btn-primary custom-hover-btn d-flex gap-1 align-items-center">
-                        <i class="fa-solid fa-cart-shopping " style="color: #ffffff;"></i>
-                        Cart
+                        <i class="fa-solid fa-cart-shopping " style="color: #ffffff;"></i> Cart
                     </button>
                 </div>
+
+                <!-- Hamburger Menu for Mobile (Visible on Small screens) -->
                 <div class="col-2 ml-2 d-flex justify-content-end d-md-none">
                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
-                            class="fas fa-bars"></i></button>
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fas fa-bars"></i>
+                    </button>
 
+                    <!-- Off-canvas Menu for Mobile (Slide-in sidebar) -->
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                         aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header bg-primary text-white">
@@ -77,45 +93,48 @@
                                 <a href="#" class="list-group-item list-group-item-action">All Categories</a>
                                 <a href="#" class="list-group-item list-group-item-action">More on Flipkart</a>
                                 <a href="#" class="list-group-item list-group-item-action">Choose Language</a>
-
-                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </nav>
 
-    <div class="container-fluid d-flex bg-white shadow-sm py-2  justify-content-center ">
+    <!-- Categories Section -->
+    <div class="container-fluid d-flex bg-white shadow-sm py-2 justify-content-center ">
         <div class="d-flex justify-content-around gap-5 hide-scrollbar overflow-auto categories-container">
 
-            <div class=" text-center ">
-                <a href="#" class=" text-decoration-none">
+            <!-- Category: Top Offers -->
+            <div class="text-center">
+                <a href="#" class="text-decoration-none">
                     <img src="categories images/top offers.png" alt="" class="d-block m-auto" width="72px"
                         height="72px">
                     <p class="mb-0 text-dark" style="white-space: nowrap;">Top Offers</p>
                 </a>
             </div>
-            <div class=" text-center ">
-                <a href="#" class=" text-decoration-none">
-                    <img src="categories images/grocery.png" alt="" class="d-block m-auto" width="72px" height="72px">
-                    <p class="mb-0 text-dark" style="white-space: nowrap;">grocery</p>
-                </a>
 
-            </div>
-            <div class=" text-center ">
-                <a href="#" class=" text-decoration-none">
-                    <img src="categories images/mobiles.png" alt="" class="d-block m-auto" width="72px" height="72px">
-                    <p class="mb-0 text-dark"style="white-space: nowrap;">Mobiles</p>
+            <!-- Category: Grocery -->
+            <div class="text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="categories images/grocery.png" alt="" class="d-block m-auto" width="72px" height="72px">
+                    <p class="mb-0 text-dark" style="white-space: nowrap;">Grocery</p>
                 </a>
             </div>
-            <div class=" text-center ">
+
+            <!-- Category: Mobiles -->
+            <div class="text-center">
+                <a href="#" class="text-decoration-none">
+                    <img src="categories images/mobiles.png" alt="" class="d-block m-auto" width="72px" height="72px">
+                    <p class="mb-0 text-dark" style="white-space: nowrap;">Mobiles</p>
+                </a>
+            </div>
+
+            <!-- Category: Fashion with Dropdown -->
+            <div class="text-center">
                 <img src="categories images/fashion.png" alt="" class="d-block m-auto" width="72px" height="72px">
-                <!-- <p class="mb-0 text-dark ">Fashion</p> -->
-                <div class="dropdown"style="white-space: nowrap;">
-                    <button class="btn p-0 border-0 " type="button" aria-expanded="false" data-bs-toggle="dropdown">
+                <div class="dropdown" style="white-space: nowrap;">
+                    <button class="btn p-0 border-0" type="button" aria-expanded="false" data-bs-toggle="dropdown">
                         Fashion
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
@@ -125,27 +144,29 @@
                         <li><a class="dropdown-item" href="#">Fashion #3</a></li>
                     </ul>
                 </div>
-
             </div>
-            <div class=" text-center ">
-                <img src="categories images/elec.png" alt=" " class="d-block m-auto" width="72px" height="72px">
-                <div class="dropdown"style="white-space: nowrap;">
-                    <button class="btn p-0 border-0  " type="button" aria-expanded="false" data-bs-toggle="dropdown">
+
+            <!-- Category: Electronics with Dropdown -->
+            <div class="text-center">
+                <img src="categories images/elec.png" alt="" class="d-block m-auto" width="72px" height="72px">
+                <div class="dropdown" style="white-space: nowrap;">
+                    <button class="btn p-0 border-0" type="button" aria-expanded="false" data-bs-toggle="dropdown">
                         Electronics
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-electronics position-fixed" >
+                    <ul class="dropdown-menu dropdown-menu-electronics position-fixed">
                         <li><a class="dropdown-item" href="#">Electronics #1</a></li>
                         <li><a class="dropdown-item" href="#">Electronics #2</a></li>
                         <li><a class="dropdown-item" href="#">Electronics #3</a></li>
                     </ul>
                 </div>
-
             </div>
-            <div class=" text-center ">
+
+            <!-- Category: Home with Dropdown -->
+            <div class="text-center">
                 <img src="categories images/home.png" alt="" class="d-block m-auto" width="72px" height="72px">
-                <div class="dropdown"style="white-space: nowrap;">
-                    <button class="btn p-0 border-0 " type="button" aria-expanded="false" data-bs-toggle="dropdown">
+                <div class="dropdown" style="white-space: nowrap;">
+                    <button class="btn p-0 border-0" type="button" aria-expanded="false" data-bs-toggle="dropdown">
                         Home
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
@@ -156,10 +177,12 @@
                     </ul>
                 </div>
             </div>
-            <div class=" text-center ">
+
+            <!-- Category: Appliances with Dropdown -->
+            <div class="text-center">
                 <img src="categories images/appliances.png" alt="" class="d-block m-auto" width="72px" height="72px">
-                <div class="dropdown"style="white-space: nowrap;">
-                    <button class="btn p-0 border-0 " type="button" aria-expanded="false" data-bs-toggle="dropdown">
+                <div class="dropdown" style="white-space: nowrap;">
+                    <button class="btn p-0 border-0" type="button" aria-expanded="false" data-bs-toggle="dropdown">
                         Appliances
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
@@ -169,64 +192,80 @@
                         <li><a class="dropdown-item" href="#">Appliances #3</a></li>
                     </ul>
                 </div>
-
             </div>
-            <div class=" text-center ">
-                <a href="#" class=" text-decoration-none">
+
+            <!-- Category: Travel -->
+            <div class="text-center">
+                <a href="#" class="text-decoration-none">
                     <img src="categories images/travel.png" alt="" width="72px" height="72px">
-                    <p class="mb-0 text-dark"style="white-space: nowrap;">Travel</p>
+                    <p class="mb-0 text-dark" style="white-space: nowrap;">Travel</p>
                 </a>
             </div>
-            <div class=" text-center ">
+
+            <!-- Category: Beauty, Toys & More with Dropdown -->
+            <div class="text-center">
                 <img src="categories images/Beauty,toy.png" class="d-block m-auto" alt="" width="72px" height="72px">
-                <div class="dropdown" style="white-space: nowrap;"style="white-space: nowrap;">
-                    <button class="btn p-0 border-0 " type="button" aria-expanded="false" data-bs-toggle="dropdown">
+                <div class="dropdown" style="white-space: nowrap;">
+                    <button class="btn p-0 border-0" type="button" aria-expanded="false" data-bs-toggle="dropdown">
                         Beauty, Toys & More
                         <i class="fa-solid fa-angle-down"></i>
                     </button>
                     <ul class="dropdown-menu position-fixed">
-                        <li><a class="dropdown-item" href="#"> Beauty, Toys & More #1</a></li>
-                        <li><a class="dropdown-item" href="#"> Beauty, Toys & More #2</a></li>
-                        <li><a class="dropdown-item" href="#"> Beauty, Toys & More #3</a></li>
+                        <li><a class="dropdown-item" href="#">Beauty, Toys & More #1</a></li>
+                        <li><a class="dropdown-item" href="#">Beauty, Toys & More #2</a></li>
+                        <li><a class="dropdown-item" href="#">Beauty, Toys & More #3</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </div>
 
-
     <div class="container-xl p-0 upper-cont">
+        <!-- Main container for the content -->
 
-        <div class="container-xl d-flex justify-content-center  p-0 m-0">
+        <div class="container-xl d-flex justify-content-center p-0 m-0">
+            <!-- Centering the content and removing margins -->
 
             <div class="container m-0 mt-3 shadow-sm border p-0" style="width: 80%;">
+                <!-- Deals of the Day section with a carousel -->
 
                 <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="container-fluid d-flex  justify-content-between my-2">
+                    <div class="container-fluid d-flex justify-content-between my-2">
+                        <!-- Header for the Deals of the Day -->
                         <div class="d-flex gap-2 align-items-center">
                             <h3 class="p-2 mb-0">Deals of the day </h3>
                             <img src="alarm-clock.png" alt="" height="24px">
+                            <!-- Clock icon to show countdown -->
                             <p class="small-text fs-6 pl-2"> 22:05:46 Left</p>
+                            <!-- Countdown timer showing remaining time -->
                         </div>
 
                         <button class="btn btn-primary border-0 rounded-0 float-end">View All</button>
+                        <!-- Button to view all deals -->
                     </div>
                     <hr class="m-0">
+                    <!-- Horizontal line separating header from the carousel content -->
+
                     <div class="carousel-inner mt-3 text-center">
+                        <!-- Inner content of the carousel -->
                         <div class="carousel-item active">
+                            <!-- First carousel item: Showcasing various categories -->
+
                             <div class="container-fluid d-flex justify-content-around">
-                                <!-- Beauty Products -->
+                                <!-- Flex container for item cards -->
+
+                                <!-- Beauty Products card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/items-beauty.png" height="130px" class="card-img-top" alt="Beauty Products">
+                                    <img src="dod/items-beauty.png" height="130px" class="card-img-top"
+                                        alt="Beauty Products">
                                     <div class="card-body">
                                         <h6 class="card-title">Beauty Products</h6>
                                         <p class="card-text offers">Up to 80% off + Extra 10% off</p>
                                         <p class="small-text">Glow with our knockout deals!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Electronics -->
+
+                                <!-- Electronics card -->
                                 <div class="card border-0" style="width: 10rem;">
                                     <img src="dod/bt.jpeg" height="130px" class="card-img-top" alt="Electronics">
                                     <div class="card-body">
@@ -235,28 +274,30 @@
                                         <p class="small-text">Unbeatable offers on gadgets!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Fashion (Glasses) -->
+
+                                <!-- Fashion Glasses card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/glasses.jpeg" height="130px" class="card-img-top" alt="Fashion - Glasses">
+                                    <img src="dod/glasses.jpeg" height="130px" class="card-img-top"
+                                        alt="Fashion - Glasses">
                                     <div class="card-body">
                                         <h6 class="card-title">Fashion Glasses</h6>
                                         <p class="card-text offers">Up to 70% off + Extra 10% off</p>
                                         <p class="small-text">Style meets savings!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Headphones & Speakers -->
+
+                                <!-- Headphones & Speakers card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/headphone.jpeg" height="130px" class="card-img-top" alt="Headphones & Speakers">
+                                    <img src="dod/headphone.jpeg" height="130px" class="card-img-top"
+                                        alt="Headphones & Speakers">
                                     <div class="card-body">
                                         <h6 class="card-title">Headphones & Speakers</h6>
                                         <p class="card-text offers">Up to 80% off + Extra 10% off</p>
                                         <p class="small-text">Sound deals for every ear!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Laptop & PC -->
+
+                                <!-- Laptops & PCs card -->
                                 <div class="card border-0" style="width: 10rem;">
                                     <img src="dod/laptop.jpeg" height="130px" class="card-img-top" alt="Laptop & PC">
                                     <div class="card-body">
@@ -265,18 +306,19 @@
                                         <p class="small-text">Work and play with power!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Powerbanks & Electronics -->
+
+                                <!-- Powerbanks & Electronics card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/pb.jpeg" height="130px" class="card-img-top" alt="Powerbanks & Electronics">
+                                    <img src="dod/pb.jpeg" height="130px" class="card-img-top"
+                                        alt="Powerbanks & Electronics">
                                     <div class="card-body">
                                         <h6 class="card-title">Powerbanks & Electronics</h6>
                                         <p class="card-text offers">Up to 80% off + Extra 10% off</p>
                                         <p class="small-text">Stay charged, stay connected!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Tablet -->
+
+                                <!-- Tablet card -->
                                 <div class="card border-0" style="width: 10rem;">
                                     <img src="dod/tablet.jpeg" height="130px" class="card-img-top" alt="Tablet">
                                     <div class="card-body">
@@ -287,20 +329,24 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="carousel-item ">
+
+                        <!-- Second carousel item: Repeating the same structure for more deals -->
+                        <div class="carousel-item">
                             <div class="container-fluid d-flex justify-content-around">
-                                <!-- Beauty Products -->
+                                <!-- Flex container for item cards -->
+
+                                <!-- Beauty Products card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/items-beauty.png" height="130px" class="card-img-top" alt="Beauty Products">
+                                    <img src="dod/items-beauty.png" height="130px" class="card-img-top"
+                                        alt="Beauty Products">
                                     <div class="card-body">
                                         <h6 class="card-title">Beauty Products</h6>
                                         <p class="card-text offers">Up to 80% off + Extra 10% off</p>
                                         <p class="small-text">Glow with our knockout deals!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Electronics -->
+
+                                <!-- Electronics card -->
                                 <div class="card border-0" style="width: 10rem;">
                                     <img src="dod/bt.jpeg" height="130px" class="card-img-top" alt="Electronics">
                                     <div class="card-body">
@@ -309,28 +355,30 @@
                                         <p class="small-text">Unbeatable offers on gadgets!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Fashion (Glasses) -->
+
+                                <!-- Fashion Glasses card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/glasses.jpeg" height="130px" class="card-img-top" alt="Fashion - Glasses">
+                                    <img src="dod/glasses.jpeg" height="130px" class="card-img-top"
+                                        alt="Fashion - Glasses">
                                     <div class="card-body">
                                         <h6 class="card-title">Fashion Glasses</h6>
                                         <p class="card-text offers">Up to 70% off + Extra 10% off</p>
                                         <p class="small-text">Style meets savings!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Headphones & Speakers -->
+
+                                <!-- Headphones & Speakers card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/headphone.jpeg" height="130px" class="card-img-top" alt="Headphones & Speakers">
+                                    <img src="dod/headphone.jpeg" height="130px" class="card-img-top"
+                                        alt="Headphones & Speakers">
                                     <div class="card-body">
                                         <h6 class="card-title">Headphones & Speakers</h6>
                                         <p class="card-text offers">Up to 80% off + Extra 10% off</p>
                                         <p class="small-text">Sound deals for every ear!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Laptop & PC -->
+
+                                <!-- Laptops & PCs card -->
                                 <div class="card border-0" style="width: 10rem;">
                                     <img src="dod/laptop.jpeg" height="130px" class="card-img-top" alt="Laptop & PC">
                                     <div class="card-body">
@@ -339,18 +387,19 @@
                                         <p class="small-text">Work and play with power!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Powerbanks & Electronics -->
+
+                                <!-- Powerbanks & Electronics card -->
                                 <div class="card border-0" style="width: 10rem;">
-                                    <img src="dod/pb.jpeg" height="130px" class="card-img-top" alt="Powerbanks & Electronics">
+                                    <img src="dod/pb.jpeg" height="130px" class="card-img-top"
+                                        alt="Powerbanks & Electronics">
                                     <div class="card-body">
                                         <h6 class="card-title">Powerbanks & Electronics</h6>
                                         <p class="card-text offers">Up to 80% off + Extra 10% off</p>
                                         <p class="small-text">Stay charged, stay connected!</p>
                                     </div>
                                 </div>
-                        
-                                <!-- Tablet -->
+
+                                <!-- Tablet card -->
                                 <div class="card border-0" style="width: 10rem;">
                                     <img src="dod/tablet.jpeg" height="130px" class="card-img-top" alt="Tablet">
                                     <div class="card-body">
@@ -362,6 +411,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Carousel controls: For navigating between carousel items -->
                     <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon shadow-sm p-3 border" aria-hidden="true"><i
@@ -376,22 +426,24 @@
                     </button>
                 </div>
             </div>
+
+            <!-- Sidebar Ad Section -->
             <div class="card border mt-3" style="width: 20%;">
                 <img src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/d5d599c240c9b2ea.jpeg?q=20" alt=""
                     height="350px">
+                <!-- Promotional ad image on the side -->
             </div>
         </div>
     </div>
-    <div class="container-xl mt-3 shadow-sm border p-0 upper-cont">
 
+    <div class="container-xl mt-3 shadow-sm border p-0 upper-cont">
         <div id="carouselExampleIndicators-2" class="carousel slide">
-            <div class="container-fluid d-flex  justify-content-between my-2">
+            <div class="container-fluid d-flex justify-content-between my-2">
                 <div class="d-flex gap-2 align-items-center">
                     <h3 class="p-2 mb-0">Deals of the day </h3>
                     <img src="alarm-clock.png" alt="" height="24px">
-                    <p class="small-text fs-6 pl-2"> 22:05:46 Left</p>
+                    <p class="small-text fs-6 pl-2">22:05:46 Left</p>
                 </div>
-
                 <button class="btn btn-primary border-0 rounded-0 float-end">View All</button>
             </div>
             <hr class="m-0">
@@ -406,145 +458,172 @@
                     <div class="container-fluid d-flex justify-content-around">
                         <!-- Item 1 -->
                         <div class="card border-0" style="width: 10rem;">
-                            <img src="books/atomic habits.jpeg" height="130px" class="card-img-top" alt="Atomic Habits Book">
+                            <img src="books/atomic habits.jpeg" height="130px" class="card-img-top"
+                                alt="Atomic Habits Book">
                             <div class="card-body">
                                 <h6 class="card-title">Atomic Habits by James Clear</h6>
                                 <p class="card-text offers">Upto 50% off + Free Shipping</p>
-                                <p class="small-text">A must-read for personal growth!</p>
+                                <p class="small-text">A must-read for personal growth! Get your life organized and take
+                                    small steps toward big results.</p>
                             </div>
                         </div>
-                        
+
                         <!-- Item 2 -->
                         <div class="card border-0" style="width: 10rem;">
                             <img src="books/drums.jpeg" height="130px" class="card-img-top" alt="Drums Book">
                             <div class="card-body">
                                 <h6 class="card-title">Learn Drums the Easy Way</h6>
                                 <p class="card-text offers">Upto 60% off + Extra 10% off</p>
-                                <p class="small-text">Start your music journey now!</p>
+                                <p class="small-text">Start your music journey now! Time to make some noise and perfect
+                                    your rhythm.</p>
                             </div>
                         </div>
-                        
+
                         <!-- Item 3 -->
                         <div class="card border-0" style="width: 10rem;">
                             <img src="books/guitar.jpeg" height="130px" class="card-img-top" alt="Guitar Book">
                             <div class="card-body">
                                 <h6 class="card-title">Master Guitar in 30 Days</h6>
                                 <p class="card-text offers">Upto 70% off + Free eBook</p>
-                                <p class="small-text">Perfect for beginners and experts!</p>
+                                <p class="small-text">Perfect for beginners and experts! Ready to shred your first solo?
+                                </p>
                             </div>
                         </div>
-                
+
                         <!-- Item 4 -->
                         <div class="card border-0" style="width: 10rem;">
-                            <img src="books/rich dad poor dad.jpeg" height="130px" class="card-img-top" alt="Rich Dad Poor Dad">
+                            <img src="books/rich dad poor dad.jpeg" height="130px" class="card-img-top"
+                                alt="Rich Dad Poor Dad">
                             <div class="card-body">
                                 <h6 class="card-title">Rich Dad Poor Dad by Robert Kiyosaki</h6>
                                 <p class="card-text offers">Upto 40% off + Extra 5% off</p>
-                                <p class="small-text">Master the art of financial freedom!</p>
+                                <p class="small-text">Master the art of financial freedom! Learn to build wealth with
+                                    smart decisions.</p>
                             </div>
                         </div>
-                        
+
                         <!-- Item 5 -->
                         <div class="card border-0" style="width: 10rem;">
                             <img src="books/The-Secret.png" height="130px" class="card-img-top" alt="The Secret Book">
                             <div class="card-body">
                                 <h6 class="card-title">The Secret by Rhonda Byrne</h6>
                                 <p class="card-text offers">Upto 55% off + Free Delivery</p>
-                                <p class="small-text">Unlock the power of your mind!</p>
+                                <p class="small-text">Unlock the power of your mind! Manifest the life you want.</p>
                             </div>
                         </div>
-                        
+
                         <!-- Item 6 -->
                         <div class="card border-0" style="width: 10rem;">
                             <img src="books/violin.jpeg" height="130px" class="card-img-top" alt="Violin Book">
                             <div class="card-body">
                                 <h6 class="card-title">Violin for Beginners</h6>
                                 <p class="card-text offers">Upto 65% off + Extra 15% off</p>
-                                <p class="small-text">Learn the violin with ease!</p>
+                                <p class="small-text">Learn the violin with ease! Begin your musical journey with this
+                                    beautiful instrument.</p>
                             </div>
                         </div>
-                        
+
                         <!-- Item 7 -->
                         <div class="card border-0" style="width: 10rem;">
-                            <img src="books/think like monk.jpg" height="130px" class="card-img-top" alt="Think Like a Monk">
+                            <img src="books/think like monk.jpg" height="130px" class="card-img-top"
+                                alt="Think Like a Monk">
                             <div class="card-body">
                                 <h6 class="card-title">Think Like a Monk by Jay Shetty</h6>
                                 <p class="card-text offers">Upto 30% off + Bonus Content</p>
-                                <p class="small-text">Master your mind and find peace!</p>
+                                <p class="small-text">Master your mind and find peace! This book is your guide to inner
+                                    calm and self-awareness.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="carousel-item ">
+
+                <div class="carousel-item">
                     <div class="container-fluid d-flex justify-content-around">
-                        <!-- Item 1 -->
-                        <div class="card border-0" style="width: 10rem;">
-                            <img src="books/atomic habits.jpeg" height="130px" class="card-img-top" alt="Atomic Habits Book">
-                            <div class="card-body">
-                                <h6 class="card-title">Atomic Habits by James Clear</h6>
-                                <p class="card-text offers">Upto 50% off + Free Shipping</p>
-                                <p class="small-text">A must-read for personal growth!</p>
+                        <div class="container-fluid d-flex justify-content-around">
+                            <!-- Item 1 -->
+                            <div class="card border-0" style="width: 10rem;">
+                                <img src="books/atomic habits.jpeg" height="130px" class="card-img-top"
+                                    alt="Atomic Habits Book">
+                                <div class="card-body">
+                                    <h6 class="card-title">Atomic Habits by James Clear</h6>
+                                    <p class="card-text offers">Upto 50% off + Free Shipping</p>
+                                    <p class="small-text">A must-read for personal growth! Get your life organized and
+                                        take
+                                        small steps toward big results.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Item 2 -->
-                        <div class="card border-0" style="width: 10rem;">
-                            <img src="books/drums.jpeg" height="130px" class="card-img-top" alt="Drums Book">
-                            <div class="card-body">
-                                <h6 class="card-title">Learn Drums the Easy Way</h6>
-                                <p class="card-text offers">Upto 60% off + Extra 10% off</p>
-                                <p class="small-text">Start your music journey now!</p>
+
+                            <!-- Item 2 -->
+                            <div class="card border-0" style="width: 10rem;">
+                                <img src="books/drums.jpeg" height="130px" class="card-img-top" alt="Drums Book">
+                                <div class="card-body">
+                                    <h6 class="card-title">Learn Drums the Easy Way</h6>
+                                    <p class="card-text offers">Upto 60% off + Extra 10% off</p>
+                                    <p class="small-text">Start your music journey now! Time to make some noise and
+                                        perfect
+                                        your rhythm.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Item 3 -->
-                        <div class="card border-0" style="width: 10rem;">
-                            <img src="books/guitar.jpeg" height="130px" class="card-img-top" alt="Guitar Book">
-                            <div class="card-body">
-                                <h6 class="card-title">Master Guitar in 30 Days</h6>
-                                <p class="card-text offers">Upto 70% off + Free eBook</p>
-                                <p class="small-text">Perfect for beginners and experts!</p>
+
+                            <!-- Item 3 -->
+                            <div class="card border-0" style="width: 10rem;">
+                                <img src="books/guitar.jpeg" height="130px" class="card-img-top" alt="Guitar Book">
+                                <div class="card-body">
+                                    <h6 class="card-title">Master Guitar in 30 Days</h6>
+                                    <p class="card-text offers">Upto 70% off + Free eBook</p>
+                                    <p class="small-text">Perfect for beginners and experts! Ready to shred your first
+                                        solo?
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                
-                        <!-- Item 4 -->
-                        <div class="card border-0" style="width: 10rem;">
-                            <img src="books/rich dad poor dad.jpeg" height="130px" class="card-img-top" alt="Rich Dad Poor Dad">
-                            <div class="card-body">
-                                <h6 class="card-title">Rich Dad Poor Dad by Robert Kiyosaki</h6>
-                                <p class="card-text offers">Upto 40% off + Extra 5% off</p>
-                                <p class="small-text">Master the art of financial freedom!</p>
+
+                            <!-- Item 4 -->
+                            <div class="card border-0" style="width: 10rem;">
+                                <img src="books/rich dad poor dad.jpeg" height="130px" class="card-img-top"
+                                    alt="Rich Dad Poor Dad">
+                                <div class="card-body">
+                                    <h6 class="card-title">Rich Dad Poor Dad by Robert Kiyosaki</h6>
+                                    <p class="card-text offers">Upto 40% off + Extra 5% off</p>
+                                    <p class="small-text">Master the art of financial freedom! Learn to build wealth
+                                        with
+                                        smart decisions.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Item 5 -->
-                        <div class="card border-0" style="width: 10rem;">
-                            <img src="books/The-Secret.png" height="130px" class="card-img-top" alt="The Secret Book">
-                            <div class="card-body">
-                                <h6 class="card-title">The Secret by Rhonda Byrne</h6>
-                                <p class="card-text offers">Upto 55% off + Free Delivery</p>
-                                <p class="small-text">Unlock the power of your mind!</p>
+
+                            <!-- Item 5 -->
+                            <div class="card border-0" style="width: 10rem;">
+                                <img src="books/The-Secret.png" height="130px" class="card-img-top"
+                                    alt="The Secret Book">
+                                <div class="card-body">
+                                    <h6 class="card-title">The Secret by Rhonda Byrne</h6>
+                                    <p class="card-text offers">Upto 55% off + Free Delivery</p>
+                                    <p class="small-text">Unlock the power of your mind! Manifest the life you want.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Item 6 -->
-                        <div class="card border-0" style="width: 10rem;">
-                            <img src="books/violin.jpeg" height="130px" class="card-img-top" alt="Violin Book">
-                            <div class="card-body">
-                                <h6 class="card-title">Violin for Beginners</h6>
-                                <p class="card-text offers">Upto 65% off + Extra 15% off</p>
-                                <p class="small-text">Learn the violin with ease!</p>
+
+                            <!-- Item 6 -->
+                            <div class="card border-0" style="width: 10rem;">
+                                <img src="books/violin.jpeg" height="130px" class="card-img-top" alt="Violin Book">
+                                <div class="card-body">
+                                    <h6 class="card-title">Violin for Beginners</h6>
+                                    <p class="card-text offers">Upto 65% off + Extra 15% off</p>
+                                    <p class="small-text">Learn the violin with ease! Begin your musical journey with
+                                        this
+                                        beautiful instrument.</p>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <!-- Item 7 -->
-                        <div class="card border-0" style="width: 10rem;">
-                            <img src="books/think like monk.jpg" height="130px" class="card-img-top" alt="Think Like a Monk">
-                            <div class="card-body">
-                                <h6 class="card-title">Think Like a Monk by Jay Shetty</h6>
-                                <p class="card-text offers">Upto 30% off + Bonus Content</p>
-                                <p class="small-text">Master your mind and find peace!</p>
+
+                            <!-- Item 7 -->
+                            <div class="card border-0" style="width: 10rem;">
+                                <img src="books/think like monk.jpg" height="130px" class="card-img-top"
+                                    alt="Think Like a Monk">
+                                <div class="card-body">
+                                    <h6 class="card-title">Think Like a Monk by Jay Shetty</h6>
+                                    <p class="card-text offers">Upto 30% off + Bonus Content</p>
+                                    <p class="small-text">Master your mind and find peace! This book is your guide to
+                                        inner
+                                        calm and self-awareness.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -565,9 +644,10 @@
         </div>
     </div>
 
+
     <div class="container-fluid mt-3 shadow-sm border px-3 lower-cont">
         <h3 class="p-2 mb-0">Deals of the Day</h3>
-    
+
         <!-- Best Glasses -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -583,7 +663,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Best Headphones -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -599,7 +679,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Best Laptops -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -615,7 +695,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Powerbanks & Electronics -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -631,7 +711,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Best Tablets -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -647,7 +727,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Fashion Glasses -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -663,7 +743,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Watches -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -680,11 +760,10 @@
             </div>
         </a>
     </div>
-    
 
     <div class="container-fluid mt-3 shadow-sm border px-3 lower-cont">
         <h3 class="p-2 mb-0">Books, Instruments & More</h3>
-    
+
         <!-- Atomic Habits -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -700,7 +779,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Drums -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -716,7 +795,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Guitar -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -732,7 +811,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Piano -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -748,7 +827,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Rich Dad Poor Dad -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -764,7 +843,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- The Secret -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -780,7 +859,7 @@
                 </div>
             </div>
         </a>
-    
+
         <!-- Violin -->
         <a class="card text-decoration-none d-flex my-2" href="#">
             <div class="cont d-flex gap-3 justify-content-between">
@@ -797,7 +876,8 @@
             </div>
         </a>
     </div>
-    
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
