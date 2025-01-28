@@ -1,0 +1,92 @@
+.custom-hover-btn:hover {
+    background-color: var(--bs-primary) !important;
+    /* Primary background color */
+    border-color: var(--bs-primary) !important;
+    /* Match border to primary color */
+    color: white !important;
+
+    /* Ensure text is readable */
+}
+
+.form-control::placeholder {
+    color: #868686;
+    /* Primary color or any color of your choice */
+}
+
+.lower-cont {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .upper-cont {
+        display: none;
+    }
+
+    .lower-cont {
+        display: block;
+    }
+
+    .row {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .row {
+        width: 90%;
+    }
+}
+
+
+
+.fa-angle-down {
+    transition: 0.2s linear;
+}
+
+.dropdown:hove {
+    .dropdown-menu {
+        display: block;
+    }
+
+    .btn {
+        color: var(--bs-primary);
+    }
+
+    .fa-angle-down {
+        transform: rotate(180deg);
+    }
+}
+
+.offers {
+    color: rgb(85, 148, 85);
+    font-size: small;
+    margin: 0;
+}
+
+.small-text {
+    color: #868686;
+    font-size: smaller;
+    margin: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+    background-color: #ffffff;
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+
+    opacity: 1;
+    width: auto;
+    height: auto;
+}
+.card-title{
+    overflow: hidden;
+    text-wrap:nowrap;
+    text-overflow:ellipsis;
+}
