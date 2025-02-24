@@ -83,7 +83,9 @@
 
     opacity: 1;
     width: auto;
-    height: auto;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .card-title{
     overflow: hidden;
